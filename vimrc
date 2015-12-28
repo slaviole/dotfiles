@@ -5,7 +5,7 @@ set nocompatible
 autocmd! bufwritepost .vimrc source %
 
 " enable 256-color mode
-set t_Co=256
+"set t_Co=256
 
 
 " set colorscheme
