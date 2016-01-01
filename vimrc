@@ -1,5 +1,6 @@
 " get rid of vi compatibility mode. SET FIRST!
 set nocompatible
+"filetype off
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
@@ -33,8 +34,8 @@ map <Leader>m <esc>:tabnext<CR>
 syntax enable
 
 " show line numbers
-set number
-"set relativenumber
+"set number
+set relativenumber
 
 " set tabs to have 4 spaces
 set ts=4
