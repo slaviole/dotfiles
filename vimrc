@@ -34,6 +34,7 @@ syntax enable
 
 " show line numbers
 set number
+"set relativenumber
 
 " set tabs to have 4 spaces
 set ts=4
@@ -54,7 +55,7 @@ set shiftwidth=4
 set showmatch
 
 " enable all Python syntax highlighting features
-let python_highlight_all = 1
+"let python_highlight_all = 1
 
 " enable pathogen
 execute pathogen#infect()
