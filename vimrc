@@ -57,7 +57,7 @@ set showmatch
 let python_highlight_all = 1
 
 " enable pathogen
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Attempt to speed up scrolling
 set ttyfast
