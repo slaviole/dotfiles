@@ -1,21 +1,22 @@
 " get rid of vi compatibility mode. SET FIRST!
 set nocompatible
-"filetype off
+filetype off
+filetype plugin indent on
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
 " enable 256-color mode
-"set t_Co=256
+set t_Co=256
+"color wombat256mod
 
 
 " set colorscheme
 colorscheme desert
 
-
 " Better Cut and paste
 set pastetoggle=<F2> " as opposed to typing :set paste in command mode
-"set clipboard=unnamed
+set clipboard=unnamed
 
 " rebind mapleader key
 let mapleader = ","
@@ -31,14 +32,20 @@ map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 
 " enable syntax highlighting
-syntax enable
+syntax on
 
 " show line numbers
 "set number
 set relativenumber
+set tw=79   " width of document (used by gd)
+set nowrap  "don't automatically wrap on load
+set fo-=t   "dont' automatically wrap text when typing
+set colorcolumn=80
+
 
 " set tabs to have 4 spaces
-set ts=4
+set tabstop=4
+set softtabstop=4
 
 " indent when moving to the next line while writing code
 set autoindent
@@ -58,8 +65,16 @@ set showmatch
 " enable all Python syntax highlighting features
 "let python_highlight_all = 1
 
-" enable pathogen
-"execute pathogen#infect()
+" Setup pathogen to manage my plugins
+" mkdir -p ~/.vim/autoload ~/.vim/bundle
+" curl -so ~/.vim/autoload/pathogen.vim
+" https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/p
+execute pathogen#infect()
+
+" Settings for vim-powerline
+set laststatus=2
+
+
 
 " Attempt to speed up scrolling
 set ttyfast
