@@ -2,14 +2,13 @@
 set nocompatible
 filetype off
 filetype plugin indent on
+syntax on
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
 " enable 256-color mode
 set t_Co=256
-"color wombat256mod
-
 
 " set colorscheme
 colorscheme desert
@@ -32,14 +31,13 @@ map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 
 " enable syntax highlighting
-syntax on
+syntax enable 
 
 " show line numbers
-"set number
+set number
 set relativenumber
-set tw=79   " width of document (used by gd)
-set nowrap  "don't automatically wrap on load
-set fo-=t   "dont' automatically wrap text when typing
+set tw=79           " width of document (used by gd)
+set nowrap          "don't automatically wrap on load
 set colorcolumn=80
 
 
@@ -74,7 +72,10 @@ execute pathogen#infect()
 " Settings for vim-powerline
 set laststatus=2
 
-
-
 " Attempt to speed up scrolling
 set ttyfast
+
+" map keyboard jj to <esc>
+imap jj <esc>
+
+
