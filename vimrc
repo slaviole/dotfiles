@@ -11,7 +11,7 @@ autocmd! bufwritepost .vimrc source %
 set t_Co=256
 
 " set colorscheme
-colorscheme desert
+colorscheme desert 
 
 " Better Cut and paste
 set pastetoggle=<F2> " as opposed to typing :set paste in command mode
@@ -75,7 +75,14 @@ set laststatus=2
 " Attempt to speed up scrolling
 set ttyfast
 
+" enable folding
+set foldmethod=indent
+set foldlevel=99
+
 " map keyboard jj to <esc>
 imap jj <esc>
 
+set encoding=utf-8
 
+" associate *.tmpl with jinja filetype
+au BufRead,BufNewFile *.tmpl set filetype=jinja
