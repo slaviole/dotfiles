@@ -36,8 +36,13 @@ syntax enable
 " show line numbers
 set number
 set relativenumber
+<<<<<<< HEAD
 "set tw=79           " width of document (used by gd)
 "set nowrap          "don't automatically wrap on load
+=======
+set tw=79           " width of document (used by gd)
+set nowrap          "don't automatically wrap on load
+>>>>>>> cbf176a101e870c89fa127ed47a1e249d475a33b
 "set colorcolumn=80
 
 
