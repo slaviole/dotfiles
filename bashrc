@@ -49,3 +49,5 @@ export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 alias vi=vim
+alias ssh3938="ssh gss@47.135.112.29 -L 80:192.168.10.123:80 -L 633:192.168.10.123:633 -L 5900:192.168.10.123:5900"
+

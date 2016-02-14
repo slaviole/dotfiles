@@ -36,9 +36,9 @@ syntax enable
 " show line numbers
 set number
 set relativenumber
-set tw=79           " width of document (used by gd)
-set nowrap          "don't automatically wrap on load
-set colorcolumn=80
+"set tw=79           " width of document (used by gd)
+"set nowrap          "don't automatically wrap on load
+"set colorcolumn=80
 
 
 " set tabs to have 4 spaces
