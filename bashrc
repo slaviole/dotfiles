@@ -3,6 +3,8 @@ export EDITOR=vim
 
 
 export PATH=~/bin:$PATH
+
+export VAGRANT_DETECTED_OS="$(uname)"
  
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
