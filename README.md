@@ -11,3 +11,9 @@ git add subfolder
 git commit -m "Enter message here"
 git push
 
+# Instructions for remapping the Caps Lock to Ctrl(for tmux) 
+You should edit the file /etc/default/keyboard and modify the XKBOPTIONS setting.
+
+For example to map capslock to control set XKBOPTIONS="ctrl:nocaps"
+
+log out and log in again for changes to impact your system.
