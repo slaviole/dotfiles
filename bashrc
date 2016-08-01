@@ -52,4 +52,10 @@ eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 alias vi=vim
 alias ssh3938="ssh gss@47.135.112.29 -L 80:192.168.10.123:80 -L 633:192.168.10.123:633 -L 5900:192.168.10.123:5900"
+<<<<<<< HEAD
 alias 3938="ssh gss@192.168.2.4 -L 80:192.168.10.123:80 -L 633:192.168.10.123:633 -L 5900:192.168.10.123:5900"
+=======
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+>>>>>>> 6f62cb9e0e86f05a6b3089fd26e278ffcf6c8139
