@@ -86,3 +86,4 @@ set encoding=utf-8
 
 " associate *.tmpl with jinja filetype
 au BufRead,BufNewFile *.tmpl set filetype=jinja
+au BufRead,BufNewFile *.tosca set filetype=hocon
