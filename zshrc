@@ -91,7 +91,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-rvm use default
+#rvm use default
 
 
 # Virtualenvwrapper setup
@@ -99,4 +99,4 @@ export WORKON_HOME=$HOME/envs
 export PROJECT_HOME=$HOME/dev
 source /usr/local/bin/virtualenvwrapper.sh
 
-
+source /etc/profile.d/rvm.sh
