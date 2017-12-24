@@ -17,3 +17,8 @@ You should edit the file /etc/default/keyboard and modify the XKBOPTIONS setting
 For example to map capslock to control set XKBOPTIONS="ctrl:nocaps"
 
 log out and log in again for changes to impact your system.
+
+When getting an error with fish about character width you need to add the following in your .profile
+	export LC_ALL=en_US.utf8
+
+
