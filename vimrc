@@ -61,7 +61,7 @@ set shiftwidth=4
 set showmatch
 
 " enable all Python syntax highlighting features
-"let python_highlight_all = 1
+let python_highlight_all = 1
 
 " Setup pathogen to manage my plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -87,3 +87,6 @@ set encoding=utf-8
 " associate *.tmpl with jinja filetype
 au BufRead,BufNewFile *.tmpl set filetype=jinja
 au BufRead,BufNewFile *.tosca set filetype=hocon
+
+" playing with keybindings to autorun python script
+map <c-n> :w !python <CR>

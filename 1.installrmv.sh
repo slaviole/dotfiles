@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 sudo apt-get install software-properties-common
 
 sudo apt-add-repository -y ppa:rael-gc/rvm
