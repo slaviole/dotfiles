@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 # This script creates symlinks from the home directory to any desired dotfiles
 # in ~/dotfiles
 ############################
