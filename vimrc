@@ -90,3 +90,6 @@ au BufRead,BufNewFile *.tosca set filetype=hocon
 
 " playing with keybindings to autorun python script
 map <c-n> :w !python <CR>
+
+" Allow mouse selection in NERDTree
+set mouse=a
