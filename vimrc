@@ -1,6 +1,10 @@
+" YouTube video named 'how to do 90% of what plugins do in just vim'
+" is a great resource for basic IDE tupe functions: FuzzyFind, auto-complete,
+" tag-jumping, 
+
 " get rid of vi compatibility mode. SET FIRST!
 set nocompatible
-filetype off
+"filetype off
 filetype plugin indent on
 syntax on
 
@@ -68,6 +72,14 @@ let python_highlight_all = 1
 " curl -so ~/.vim/autoload/pathogen.vim
 " https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/p
 execute pathogen#infect()
+
+
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matchingfiles when tab complete
+set wildmenu
 
 " Settings for vim-powerline
 set laststatus=2
