@@ -4,7 +4,7 @@
 
 " get rid of vi compatibility mode. SET FIRST!
 set nocompatible
-"filetype off
+filetype off
 filetype plugin indent on
 syntax on
 
@@ -105,3 +105,8 @@ map <c-n> :w !python <CR>
 
 " Allow mouse selection in NERDTree
 set mouse=a
+
+" disable <tab> for YCM so it doesn't conflict with Snipmate <tab>
+" So you need to use movement keys and <CR> to select in YCM
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
